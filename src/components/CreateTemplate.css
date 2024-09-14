@@ -1,0 +1,83 @@
+.create-template-container {
+  display: flex;
+  justify-content: center; /* Align the form in the center */
+  height: 100vh; /* Full viewport height */
+  width: 100%; /* Full viewport width */
+  padding: 20px;
+}
+
+.create-template {
+  background-color: #fff; /* White background for the form */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 100%; /* Full width */
+  max-width: 600px; /* Set max width */
+}
+
+.create-template h2 {
+  text-align: center;
+  color: #333;
+}
+
+.create-template label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.create-template input[type="text"],
+.create-template select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.create-template button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.create-template button:hover {
+  background-color: #45A049;
+}
+
+.create-template .message {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.create-template .message.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.create-template .message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.create-template .options {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.view-templates {
+  width: 100%;
+  padding: 20px;
+}
+
+.hidden {
+  display: none; /* Hide view templates section */
+}
+
