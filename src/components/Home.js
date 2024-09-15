@@ -5,18 +5,17 @@ function Home() {
   return (
     <div className="relative w-full h-full py-18 flex justify-center items-center overflow-hidden">
       <img 
-        className="w-full h-[50%] rounded-xl md:px-10 object-cover py-6"
-        src="https://scontent.whatsapp.net/v/t39.8562-34/316546300_547692113846445_7299710494491288098_n.png?ccb=1-7&_nc_sid=73b08c&_nc_ohc=Av3MiRD9ZLAQ7kNvgF57Uv3&_nc_ht=scontent.whatsapp.net&_nc_gid=A2Et8WzYBTiyfGd1wfYuPD1&oh=01_Q5AaICWnL-z_G0Pog7Rf7RAeay3ZWDSQCdZY0DJrmGV5xoDA&oe=66EC3D25"
-        alt="Demo Image"
+        className="w-full h-full rounded-xl md:px-10 object-cover py-6 "
+        src="https://images.unsplash.com/photo-1431540015161-0bf868a2d407?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       />
       <div className="absolute inset-0 flex justify-center items-center">
         <div className='w-full px-20 top-0  '>
-        <div className="text-white w-[20%] text-6xl font-bold  bg-opacity-50 py-4 rounded-lg">
-          Message Privately
+        <div className="text-black w-[50%] text-4xl font-bold  bg-opacity-50 py-4 rounded-lg">
+        Grow Your Business by Connecting with Us on WhatsApp Meta!
         </div>
-        <div className='text-2xl  w-[30%] text-white'>
+        {/* <div className='text-2xl  w-[30%] text-black'>
         Simple, reliable, private messaging and calling for free*, available all over the world.
-        </div> 
+        </div>  */}
         </div>
       </div>
     </div>

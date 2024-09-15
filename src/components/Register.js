@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { registerUser } from "../services/api.js";
+import UserProfile from "../assets/userprofile.jpg"
 import "../App.css";
+import showPasswordIcon from "../assets/visible.jpg"; 
+import hidePasswordIcon from "../assets/notvisible.jpg"; 
 
 const Register = () => {
   const [formData, setFormData] = useState({
@@ -39,16 +42,16 @@ const Register = () => {
   };
 
   return (
-    <div className="container">
-      <img
+    <div className="container overflow-hidden p-6 "> {/* Added mt-10 for spacing */}
+      {/* <img
         src="https://p99soft.com/wp-content/uploads/2023/09/logo-1024x319.png"
         width={200}
         height={75}
         alt="Company Logo"
-      />
+      /> */}
       <div className="form-container">
         <img
-          src="https://w7.pngwing.com/pngs/178/595/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png"
+          src={UserProfile}
           width={100}
           height={100}
           alt="User Icon"
@@ -88,10 +91,19 @@ const Register = () => {
               value={formData.password}
               onChange={handleInputChange}
               required
+              style={{ flex: "1", marginRight: "8px", marginBottom:"5px" }}
             />
-            <span className="showPass" onClick={() => setShowPass(!showPass)}>
-              {showPass ? "😃" : "😌"}
-            </span>
+            <button
+              type="button"
+              onClick={() => setShowPass(!showPass)}
+              style={{ flex: "0 0 15%", background: "none", border: "none", cursor: "pointer" }}
+            >
+              <img
+                src={showPass ? hidePasswordIcon : showPasswordIcon}
+                alt={showPass ? "Hide password" : "Show password"}
+                style={{ width: "100%", height: "100%"}}
+              />
+            </button>
           </div>
           <button type="submit">Register</button>
         </form>
@@ -103,7 +115,7 @@ const Register = () => {
         {error.includes('successful') && (
           <button onClick={() => navigate("/login")}>Go to Login</button>
         )}
-        <p>Already have an account? <a href="/login">Login here</a></p>
+        <p>Already have an account? <a href="/login" className="hover:underline hover:text-blue-700 transition-colors duration-200">Login here</a></p>
       </div>
     </div>
   );

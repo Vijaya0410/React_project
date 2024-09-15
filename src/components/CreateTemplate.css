@@ -1,50 +1,53 @@
 .create-template-container {
   display: flex;
-  justify-content: center; /* Align the form in the center */
-  height: 100vh; /* Full viewport height */
-  width: 100%; /* Full viewport width */
-  padding: 10px; /* Reduced padding */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .create-template {
-  background-color: #fff; /* White background for the form */
+  background-color: rgb(211, 211, 211);
   padding: 15px; /* Reduced padding */
   border-radius: 8px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* Slightly reduced shadow */
-  width: 100%; /* Full width */
-  max-width: 500px; /* Reduced max width */
-  box-sizing: border-box; /* Ensure padding and border are included in the width */
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
 }
 
 .create-template h2 {
   text-align: center;
   color: #333;
-  margin-bottom: 15px; /* Reduced margin-bottom */
+  margin-bottom: 10px; /* Reduced margin-bottom */
 }
 
 .create-template label {
   display: block;
-  margin: 8px 0 4px; /* Reduced margin */
+  margin: 5px 0 2px; /* Reduced margin */
 }
 
 .create-template input[type="text"],
 .create-template select {
   width: 100%;
-  padding: 8px; /* Reduced padding */
-  margin-bottom: 12px; /* Reduced margin-bottom */
+  padding: 6px; /* Reduced padding */
+  margin-bottom: 8px; /* Reduced margin-bottom */
   border: 1px solid #ccc;
   border-radius: 5px;
+  box-sizing: border-box;
 }
 
 .create-template button {
   width: 100%;
-  padding: 10px; /* Reduced padding */
-  margin-top: 8px; /* Reduced margin-top */
+  padding: 8px; /* Reduced padding */
+  margin-top: 5px; /* Reduced margin-top */
   background-color: #4CAF50;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 .create-template button:hover {
@@ -53,8 +56,8 @@
 
 .create-template .message {
   text-align: center;
-  margin-top: 15px; /* Reduced margin-top */
-  padding: 8px; /* Reduced padding */
+  margin-top: 10px; /* Reduced margin-top */
+  padding: 6px; /* Reduced padding */
   border-radius: 5px;
 }
 
@@ -71,18 +74,19 @@
 .create-template .options {
   display: flex;
   justify-content: space-between;
-  margin-top: 15px; /* Reduced margin-top */
-  gap: 10px; /* Add some space between the buttons */
+  margin-top: 10px; /* Reduced margin-top */
+  gap: 5px; /* Reduced gap between buttons */
 }
 
 .create-template .options button {
-  width: 48%; /* Ensure buttons fit within the form */
-  padding: 10px;
+  flex: 1;
+  padding: 8px; /* Reduced padding */
   background-color: #4CAF50;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 .create-template .options button:hover {
@@ -90,11 +94,30 @@
 }
 
 .view-templates {
-  display: block;
-  padding: 0; /* Remove extra padding */
-  margin: 0; /* Remove extra margin */
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 15px; /* Reduced margin-top */
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+}
+
+.view-templates ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.view-templates li {
+  padding: 8px; /* Reduced padding */
+  border-bottom: 1px solid #ccc;
+}
+
+.view-templates li:last-child {
+  border-bottom: none;
 }
 
 .hidden {
-  display: none; /* Hide view templates section */
+  display: none;
 }

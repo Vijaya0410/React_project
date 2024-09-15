@@ -3,8 +3,8 @@ import { useNavigate } from "react-router-dom";
 import UserProfile from "../assets/userprofile.jpg"
 import "../App.css";
 
-import showPasswordIcon from "../assets/visible.jpg"; // Update the path if needed
-import hidePasswordIcon from "../assets/notvisible.jpg"; // Update the path if needed
+import showPasswordIcon from "../assets/visible.jpg"; 
+import hidePasswordIcon from "../assets/notvisible.jpg"; 
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -16,11 +16,11 @@ const Login = () => {
   const handleLogin = (e) => {
     e.preventDefault();
 
-    // Simulate successful login
+    
     console.log("Login successful with email:", email);
     setMessage("Login successful! Redirecting to dashboard...");
     
-    // Simulate storing user data in localStorage
+    
     localStorage.setItem("userEmail", email);
 
     // Redirect to dashboard after 1.5 seconds

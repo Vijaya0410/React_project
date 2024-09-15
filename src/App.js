@@ -4,7 +4,7 @@ import Register from './components/Register';
 import Login from './components/Login';
 import Dashboard from './components/Dashboard'; // Import Dashboard component
 import CreateTemplate from './components/ CreateTemplate';
-import ViewTemplates from './ViewTemplates';
+import SampleTemplates from './SampleTemplates';
 import Home from './components/Home';
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
      
         <Route path="/" element={<Dashboard />} />
       <Route path="/create-template" element={<CreateTemplate />} />
-      <Route path="/view-templates" element={<ViewTemplates />} />
+      <Route path="/sample-templates" element={<SampleTemplates />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
      
