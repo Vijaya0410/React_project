@@ -77,13 +77,13 @@ button:hover {
   margin-top: 15px;
 }
 
-        body {
+        /* body {
             height: 100vh;
             margin: 0;
             background: linear-gradient(45deg, #ff6b6b, #f06595, #845ef7, #5c7cfa);
             background-size: 300% 300%;
             animation: gradientAnimation 10s ease infinite;
-        }
+        } */
 
         @keyframes gradientAnimation {
             0% {
@@ -138,3 +138,14 @@ button:hover {
   margin: 0 auto 20px auto;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
+
+.text a {
+  color: inherit; /* Inherit color from parent, or set a default color */
+  text-decoration: none; /* Remove underline if needed */
+}
+
+.text a:hover {
+  color: blue; /* Change the color to blue on hover */
+  text-decoration: underline; /* Optional: underline text on hover */
+}
+

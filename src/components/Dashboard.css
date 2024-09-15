@@ -1,8 +1,17 @@
 /* Dashboard.css */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; /* Light grey background for the entire page */
+}
+
 .dashboard {
   text-align: center;
   padding: 20px;
   background-color: #fff; /* White background for the dashboard */
+  border-radius: 10px; /* Optional: Add some border-radius to the dashboard */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+  margin: 20px; /* Optional: Add some margin around the dashboard */
 }
 
 .dashboard h2 {
